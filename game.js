@@ -11,7 +11,7 @@ var lPadY = 250;
 var rPadY = 250;
 const PADDLE_HEIGHT = 100;
 const PADDLE_THICKNESS = 10;
-const WIN_SCORE = 2;
+const WIN_SCORE = 3;
 var midPad = lPadY + PADDLE_HEIGHT/2
 var lScore = 0;
 var rScore = 0;
@@ -109,7 +109,7 @@ function move() {
         resetBall();
     }
     if (ballY >= canv.height-10)
-        yv = -yv ;
+        yv = -yv;
     if (ballY <=10)
         yv = -yv;
     ballY +=yv;
